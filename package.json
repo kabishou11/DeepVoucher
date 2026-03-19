@@ -1,0 +1,15 @@
+{
+  "name": "voucher-auto-entry",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter voucher-auto-entry-web dev",
+    "build:web": "pnpm --filter voucher-auto-entry-web build",
+    "start:web": "pnpm --filter voucher-auto-entry-web start",
+    "dev:api": ".\\venv\\Scripts\\python.exe -m uvicorn apps.api.main:app --reload --host 127.0.0.1 --port 8000",
+    "verify:readiness": ".\\venv\\Scripts\\python.exe .\\scripts\\verify_readiness.py"
+  }
+}

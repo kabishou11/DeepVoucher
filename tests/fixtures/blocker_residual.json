@@ -1,0 +1,70 @@
+{
+  "status": "blocked",
+  "mode": "modelscope_live",
+  "voucher_date": "2026-01-31",
+  "facts": [],
+  "extractions": [],
+  "amount_items": [],
+  "posting_candidates": [
+    {
+      "posting_id": "post-001",
+      "requires_review": true,
+      "account_candidates": []
+    },
+    {
+      "posting_id": "post-002",
+      "requires_review": false,
+      "account_candidates": []
+    }
+  ],
+  "preview_lines": [
+    {
+      "row": 0,
+      "zy": "残差借方",
+      "kmdm": "",
+      "kmmc": "",
+      "jie": "120.00",
+      "dai": "0.00",
+      "fzkm": "",
+      "slhs": "-",
+      "number": ""
+    },
+    {
+      "row": 1,
+      "zy": "贷方",
+      "kmdm": "1020101",
+      "kmmc": "银行存款/基本账户/基本户",
+      "jie": "0.00",
+      "dai": "120.00",
+      "fzkm": "",
+      "slhs": "-",
+      "number": ""
+    }
+  ],
+  "blockers": [
+    {
+      "blocker_id": "blk-residual-0",
+      "blocker_type": "residual_amount",
+      "message": "residual needs review",
+      "target_id": "line-0"
+    }
+  ],
+  "review_actions": [],
+  "nodes": [
+    {
+      "id": "split_amount_items",
+      "label": "金额单元拆分",
+      "status": "blocked",
+      "summary": "残差待确认"
+    }
+  ],
+  "debug": {
+    "amount_notes": [
+      {
+        "attachment_id": "att-001",
+        "type": "residual_amount",
+        "message": "残差 120.00"
+      }
+    ]
+  }
+}

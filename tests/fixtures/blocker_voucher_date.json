@@ -1,0 +1,59 @@
+{
+  "status": "blocked",
+  "mode": "modelscope_live",
+  "voucher_date": "",
+  "facts": [],
+  "extractions": [],
+  "amount_items": [],
+  "posting_candidates": [
+    {
+      "posting_id": "post-001",
+      "requires_review": false,
+      "account_candidates": []
+    }
+  ],
+  "preview_lines": [
+    {
+      "row": 0,
+      "zy": "测试摘要A",
+      "kmdm": "",
+      "kmmc": "",
+      "jie": "100.00",
+      "dai": "0.00",
+      "fzkm": "",
+      "slhs": "-",
+      "number": ""
+    },
+    {
+      "row": 1,
+      "zy": "测试摘要B",
+      "kmdm": "1020101",
+      "kmmc": "银行存款/基本账户/基本户",
+      "jie": "0.00",
+      "dai": "100.00",
+      "fzkm": "",
+      "slhs": "-",
+      "number": ""
+    }
+  ],
+  "blockers": [
+    {
+      "blocker_id": "blk-voucher-date",
+      "blocker_type": "voucher_date_missing",
+      "message": "need date",
+      "target_id": "voucher"
+    }
+  ],
+  "review_actions": [],
+  "nodes": [
+    {
+      "id": "validate_voucher",
+      "label": "凭证校验",
+      "status": "blocked",
+      "summary": "blocked"
+    }
+  ],
+  "debug": {
+    "amount_notes": []
+  }
+}
